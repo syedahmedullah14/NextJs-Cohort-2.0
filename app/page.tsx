@@ -1,4 +1,16 @@
 import axios from 'axios';
+import { PrismaClient } from '@prisma/client/extension';
+import { NextResponse } from 'next/server';
+
+const client = new PrismaClient();
+
+export async function fetchData() {
+  const user = await client.user.findFirst({});
+
+    return { username: user?.username,
+      name: 'jaser'
+    }
+}
 
 async function getUserDetails() {
   await new Promise((r) => setTimeout(r, 100))

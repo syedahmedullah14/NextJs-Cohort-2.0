@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 }
 
 
-export async function GET() {
-  const user = await client.user.findFirst({});
-  return NextResponse.json({ name: user?.username, email: user?.username });
-}
+// export async function GET() {
+//   const user = await client.user.findFirst({});
+//   return NextResponse.json({ name: user?.username, email: user?.username });
+// }
