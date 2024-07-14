@@ -16,7 +16,7 @@ export default function Signup() {
                 <div>
                     <div className="px-10">
                         <div className="text-3xl font-extrabold">
-                            Sign up
+                            Sign in
                         </div>
                     </div>
                     <div className="pt-2">
@@ -30,7 +30,6 @@ export default function Signup() {
                             // const response = await axios.post("http://localhost:3000/api/user", {
                             //     username,
                             //     password
-
                             //TODO server action call
                             signup(username, password)
                             ;
